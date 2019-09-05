@@ -11,7 +11,7 @@ body,
   body,
   header,
   .view {
-    height: 1000px;
+    height: 100%;
   }
 }
 
@@ -20,7 +20,7 @@ body,
   body,
   header,
   .view {
-    height: 650px;
+    height: 100%;
   }
 }
 
