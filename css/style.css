@@ -135,3 +135,10 @@ body,
 .padding-60{
   padding-top:60px;
 }
+
+#mc_embed_signup{
+  background:#1C2331;
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+  width:100%;
+}

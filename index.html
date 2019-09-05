@@ -14,16 +14,7 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
-  <style type="text/css">
-    html,
-    body,
-    header,
-    .view {
-      height: 100%;
-    }
-
-
-  </style>
+  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 </head>
 
 <body data-spy="scroll" data-target="#main-nav" class="scrollspy-example z-depth-1" data-offset="0" id="home">
@@ -133,7 +124,7 @@
               <div class="card-body">
 
                 <!-- Form -->
-                <form name="">
+                <form name="contact" action="https://script.google.com/macros/s/AKfycbz-Qe4VWBmqe5n0qMnR1KoO2m0gkmp95QMz8K7GEw/exec" method="post" data-email="karanunewton4@gmail.com" id="gform" class="gform">
                   <!-- Heading -->
                   <h3 class="dark-grey-text text-center">
                     <strong>Request a Quote:</strong>
@@ -142,28 +133,32 @@
 
                   <div class="md-form">
                     <i class="fas fa-user prefix grey-text"></i>
-                    <input type="text" id="form3" class="form-control">
+                    <input type="text" id="form3" class="form-control" name="name">
                     <label for="form3">Your name</label>
                   </div>
                   <div class="md-form">
                     <i class="fas fa-envelope prefix grey-text"></i>
-                    <input type="text" id="form2" class="form-control">
+                    <input type="text" id="form2" class="form-control" name="email">
                     <label for="form2">Your email</label>
                   </div>
 
                   <div class="md-form">
                     <i class="fas fa-pencil-alt prefix grey-text"></i>
-                    <textarea type="text" id="form8" class="md-textarea"></textarea>
+                    <textarea type="text" id="form8" class="md-textarea" name="message"></textarea>
                     <label for="form8">Your message</label>
                   </div>
 
                   <div class="text-center">
                     <button class="btn btn-indigo">Send</button>
                     <hr>
-                    <fieldset class="form-check">
-                      <input type="checkbox" class="form-check-input" id="checkbox1">
-                      <label for="checkbox1" class="form-check-label dark-grey-text">Subscribe me to the newsletter</label>
-                    </fieldset>
+<!--                    <fieldset class="form-check">-->
+<!--                      <input type="checkbox" class="form-check-input" id="checkbox1">-->
+<!--                      <label for="checkbox1" class="form-check-label dark-grey-text">Subscribe me to the newsletter</label>-->
+<!--                    </fieldset>-->
+                    <div style="display:none" class="thankyou_message alert alert-success">
+                      <button type="button" class="close" data-dismiss="thankyou_message">×</button>
+                      <strong>Thank you</strong> for contacting Top Figures Agency. Someone will get in touch with you shortly!
+                    </div>
                   </div>
 
                 </form>
@@ -262,14 +257,14 @@
 
 
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter ui-ux">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter ui-ux web-app-dev">
               <!-- Card -->
               <div class="card">
 
                 <!-- Card image -->
                 <div class="view overlay">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                  <a href="asdf">
+                  <img class="card-img-top" src="./images/moringa-blog.png" alt="Card image cap">
+                  <a href="http://overflow.moringaschool.com" target="_blank">
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
@@ -278,11 +273,14 @@
                 <div class="card-body">
 
                   <!-- Title -->
-                  <h4 class="card-title">Card title</h4>
+                  <h4 class="card-title">Moringa Tech Blog</h4>
                   <!-- Text -->
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">CMS | Content Creation
+                  <br>
+                  Technologies used: Hugo | Disqus
+                  </p>
                   <!-- Button -->
-                  <a href="#" class="btn btn-primary">Button</a>
+<!--                  <a href="#" class="btn btn-primary">View Live </a>-->
 
                 </div>
 
@@ -290,14 +288,14 @@
               <!-- Card -->
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter web-app-dev">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter web-app-dev ui-ux">
               <!-- Card -->
               <div class="card">
 
                 <!-- Card image -->
                 <div class="view overlay">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                  <a href="#!">
+                  <img class="card-img-top" src="./images/pun.png" alt="Card image cap">
+                  <a href="http://mspun.herokuapp.com/" target="_blank">
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
@@ -306,11 +304,14 @@
                 <div class="card-body">
 
                   <!-- Title -->
-                  <h4 class="card-title">Card title</h4>
+                  <h4 class="card-title">Puns</h4>
                   <!-- Text -->
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Dynamic Website
+                  <br>
+                  Technologies used: Ruby | Sinatra | Materialize
+                  </p>
                   <!-- Button -->
-                  <a href="#" class="btn btn-primary">Button</a>
+<!--                  <a href="#" class="btn btn-primary">Button</a>-->
 
                 </div>
 
@@ -318,14 +319,14 @@
               <!-- Card -->
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter ui-ux">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter ui-ux web-app-dev seo">
               <!-- Card -->
               <div class="card">
 
                 <!-- Card image -->
                 <div class="view overlay">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                  <a href="#!">
+                  <img class="card-img-top" src="./images/wakili.png" alt="Card image cap">
+                  <a href="http://wakili101.com" target="_blank">
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
@@ -334,11 +335,14 @@
                 <div class="card-body">
 
                   <!-- Title -->
-                  <h4 class="card-title">Card title</h4>
+                  <h4 class="card-title">Wakili 101</h4>
                   <!-- Text -->
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Dynamic Single page website | SEO
+                  <br>
+                  Technologies used: React | Yii | Google Analytics
+                  </p>
                   <!-- Button -->
-                  <a href="#" class="btn btn-primary">Button</a>
+<!--                  <a href="#" class="btn btn-primary">Button</a>-->
 
                 </div>
 
@@ -346,14 +350,14 @@
               <!-- Card -->
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter seo">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter digital-marketing seo web-app-dev">
               <!-- Card -->
               <div class="card">
 
                 <!-- Card image -->
                 <div class="view overlay">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                  <a href="#!">
+                  <img class="card-img-top" src="./images/tsavo.png" alt="Card image cap">
+                  <a href="http://tsavo.ke/" target="_blank">
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
@@ -362,11 +366,14 @@
                 <div class="card-body">
 
                   <!-- Title -->
-                  <h4 class="card-title">Card title</h4>
+                  <h4 class="card-title">Tsavo</h4>
                   <!-- Text -->
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">WordPress | CMS | SEO | UI/UX
+                  <br>
+                  Technologies used: Wordpress
+                  </p>
                   <!-- Button -->
-                  <a href="#" class="btn btn-primary">Button</a>
+<!--                  <a href="#" class="btn btn-primary">Button</a>-->
 
                 </div>
 
@@ -374,14 +381,14 @@
               <!-- Card -->
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter digital-marketing">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter seo web-app-dev">
               <!-- Card -->
               <div class="card">
 
                 <!-- Card image -->
                 <div class="view overlay">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                  <a href="#!">
+                  <img class="card-img-top" src="./images/watchlist.png" alt="Card image cap">
+                  <a href="http://watchl1st.herokuapp.com/" target="_blank">
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
@@ -390,11 +397,14 @@
                 <div class="card-body">
 
                   <!-- Title -->
-                  <h4 class="card-title">Card title</h4>
+                  <h4 class="card-title">Movie Watch List</h4>
                   <!-- Text -->
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Dynamic Website | UI/UX
+                  <br>
+                  Technologies used: Python | Django | the movie db api
+                  </p>
                   <!-- Button -->
-                  <a href="#" class="btn btn-primary">Button</a>
+<!--                  <a href="#" class="btn btn-primary">Button</a>-->
 
                 </div>
 
@@ -402,14 +412,14 @@
               <!-- Card -->
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter seo">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter digital-marketing seo web-app-dev">
               <!-- Card -->
               <div class="card">
 
                 <!-- Card image -->
                 <div class="view overlay">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                  <a href="#!">
+                  <img class="card-img-top" src="./images/newton-portfolio.png" alt="Card image cap">
+                  <a href="newtonkiragu.github.io">
                     <div class="mask rgba-white-slight"></div>
                   </a>
                 </div>
@@ -418,11 +428,14 @@
                 <div class="card-body">
 
                   <!-- Title -->
-                  <h4 class="card-title">Card title</h4>
+                  <h4 class="card-title">Newton Karanu</h4>
                   <!-- Text -->
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="card-text">Static single page portfolio | SEO | UI/UX
+                  <br>
+                  Technologies used: HTML5 | CSS3 | Bootstrap | Google analytics
+                  </p>
                   <!-- Button -->
-                  <a href="#" class="btn btn-primary">Button</a>
+<!--                  <a href="#" class="btn btn-primary">Button</a>-->
 
                 </div>
 
@@ -430,173 +443,6 @@
               <!-- Card -->
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter digital-marketing">
-              <!-- Card -->
-              <div class="card">
-
-                <!-- Card image -->
-                <div class="view overlay">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                  <a href="#!">
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!-- Card content -->
-                <div class="card-body">
-
-                  <!-- Title -->
-                  <h4 class="card-title">Card title</h4>
-                  <!-- Text -->
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <!-- Button -->
-                  <a href="#" class="btn btn-primary">Button</a>
-
-                </div>
-
-              </div>
-              <!-- Card -->
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter seo">
-              <!-- Card -->
-              <div class="card">
-
-                <!-- Card image -->
-                <div class="view overlay">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                  <a href="#!">
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!-- Card content -->
-                <div class="card-body">
-
-                  <!-- Title -->
-                  <h4 class="card-title">Card title</h4>
-                  <!-- Text -->
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <!-- Button -->
-                  <a href="#" class="btn btn-primary">Button</a>
-
-                </div>
-
-              </div>
-              <!-- Card -->
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter seo">
-              <!-- Card -->
-              <div class="card">
-
-                <!-- Card image -->
-                <div class="view overlay">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                  <a href="#!">
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!-- Card content -->
-                <div class="card-body">
-
-                  <!-- Title -->
-                  <h4 class="card-title">Card title</h4>
-                  <!-- Text -->
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <!-- Button -->
-                  <a href="#" class="btn btn-primary">Button</a>
-
-                </div>
-
-              </div>
-              <!-- Card -->
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter ui-ux">
-              <!-- Card -->
-              <div class="card">
-
-                <!-- Card image -->
-                <div class="view overlay">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                  <a href="#!">
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!-- Card content -->
-                <div class="card-body">
-
-                  <!-- Title -->
-                  <h4 class="card-title">Card title</h4>
-                  <!-- Text -->
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <!-- Button -->
-                  <a href="#" class="btn btn-primary">Button</a>
-
-                </div>
-
-              </div>
-              <!-- Card -->
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter digital-marketing">
-              <!-- Card -->
-              <div class="card">
-
-                <!-- Card image -->
-                <div class="view overlay">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                  <a href="#!">
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!-- Card content -->
-                <div class="card-body">
-
-                  <!-- Title -->
-                  <h4 class="card-title">Card title</h4>
-                  <!-- Text -->
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <!-- Button -->
-                  <a href="#" class="btn btn-primary">Button</a>
-
-                </div>
-
-              </div>
-              <!-- Card -->
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter web-app-dev">
-              <!-- Card -->
-              <div class="card">
-
-                <!-- Card image -->
-                <div class="view overlay">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                  <a href="#!">
-                    <div class="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <!-- Card content -->
-                <div class="card-body">
-
-                  <!-- Title -->
-                  <h4 class="card-title">Card title</h4>
-                  <!-- Text -->
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <!-- Button -->
-                  <a href="#" class="btn btn-primary">Button</a>
-
-                </div>
-
-              </div>
-              <!-- Card -->
-            </div>
           </div>
         </div>
       </section>
@@ -731,7 +577,20 @@
   <footer class="page-footer text-center font-small mt-4 wow fadeIn">
 
     <hr class="my-4">
+    <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup">
+      <form action="https://gmail.us4.list-manage.com/subscribe/post?u=4395bd6f2ff7403017a964a2f&amp;id=52019d4c05" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll md-form">
+          <label for="mce-EMAIL">Join our mailing list</label>
+          <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4395bd6f2ff7403017a964a2f_52019d4c05" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-indigo btn-sm"></div>
+        </div>
+      </form>
+    </div>
 
+    <!--End mc_embed_signup-->
     <!-- Social icons -->
     <div class="pb-4">
       <a href="#" target="_blank">
@@ -787,6 +646,7 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/form-submission-handler.js"></script>
   <!-- Initializations -->
   <script type="text/javascript">
     // Animations initialization
