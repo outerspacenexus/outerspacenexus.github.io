@@ -124,7 +124,7 @@
               <div class="card-body">
 
                 <!-- Form -->
-                <form name="contact" action="https://script.google.com/macros/s/AKfycbz-Qe4VWBmqe5n0qMnR1KoO2m0gkmp95QMz8K7GEw/exec" method="post" data-email="karanunewton4@gmail.com" id="gform" class="gform">
+                <form name="contact" action="https://script.google.com/macros/s/AKfycbz-Qe4VWBmqe5n0qMnR1KoO2m0gkmp95QMz8K7GEw/exec" method="post" data-email="saidamohamed.m@gmail.com" id="gform" class="gform">
                   <!-- Heading -->
                   <h3 class="dark-grey-text text-center">
                     <strong>Request a Quote:</strong>
@@ -133,18 +133,18 @@
 
                   <div class="md-form">
                     <i class="fas fa-user prefix grey-text"></i>
-                    <input type="text" id="form3" class="form-control" name="name">
+                    <input type="text" id="form3" class="form-control" name="name" required>
                     <label for="form3">Your name</label>
                   </div>
                   <div class="md-form">
                     <i class="fas fa-envelope prefix grey-text"></i>
-                    <input type="text" id="form2" class="form-control" name="email">
+                    <input type="email" id="form2" class="form-control" name="email" required>
                     <label for="form2">Your email</label>
                   </div>
 
                   <div class="md-form">
                     <i class="fas fa-pencil-alt prefix grey-text"></i>
-                    <textarea type="text" id="form8" class="md-textarea" name="message"></textarea>
+                    <textarea type="text" id="form8" class="md-textarea" name="message" required></textarea>
                     <label for="form8">Your message</label>
                   </div>
 
@@ -219,10 +219,10 @@
             </p>
 
             <!-- CTA -->
-            <a target="_blank" href="#" class="btn btn-indigo btn-md">Reach Out
+            <a  href="#" class="btn btn-indigo btn-md nav-link" data-id="contact">Reach Out
               <i class="fas fa-download ml-1"></i>
             </a>
-            <a target="_blank" href="#" class="btn btn-indigo btn-md">View Our Work
+            <a href="#" class="btn btn-indigo btn-md nav-link" data-id="portfolio">View Our Work
               <i class="far fa-image ml-1"></i>
             </a>
 
@@ -560,9 +560,14 @@
 
       <hr class="my-5">
 
-      <section>
+      <section id="contact">
         <h2 class="my-5 h3 text-center">Contact Us</h2>
-
+        <div class="container" align="center">
+          <p>Feel free to reach out to us via <br>
+          <i class="fab fa-whatsapp fa-2x"></i> <a href="tel:+447451223764">Whatsapp</a> <br>
+            <i class="fas fa-phone fa-2x"></i> <a href="tel:+254712556927">Phone call</a>
+          </p>
+        </div>
 
       </section>
 
