@@ -46,10 +46,11 @@ $(document).ready(function () {
 function scrollToID(id, speed) {
     var offSet = 50;
     var targetOffset = $(id).offset().top - offSet;
-    var mainNav = $('#main-nav');
+    var mainNav = $('#navbarSupportedContent');
     $('html,body').animate({ scrollTop: targetOffset }, speed);
     if (mainNav.hasClass("open")) {
         mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+        console.log("I have collapsed");
         mainNav.addClass("open");
     }
 }
