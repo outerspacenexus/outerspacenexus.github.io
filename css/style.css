@@ -142,3 +142,13 @@ body,
   font:14px Helvetica,Arial,sans-serif;
   width:100%;
 }
+
+.nav-social-icon {
+  color: #ffffff;
+  padding: 8px;
+}
+
+.nav-social-icon:hover {
+   color: rgba(255,255,255,.8);
+  /*transition: .35s;*/
+ }
