@@ -19,7 +19,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133342901-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-133342901-1');
@@ -37,8 +37,8 @@
       </a>
 
       <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -76,8 +76,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-social-icon"
-              target="_blank">
+            <a href="#" class="nav-social-icon" target="_blank">
               <i class="fab fa-instagram mr-2"></i>
             </a>
           </li>
@@ -90,7 +89,8 @@
   <!-- Navbar -->
 
   <!-- Full Page Intro -->
-  <div class="view full-page-intro" style="background-image: url('./images/sample.jpg'); background-repeat: no-repeat; background-size: cover;">
+  <div class="view full-page-intro"
+    style="background-image: url('./images/sample.jpg'); background-repeat: no-repeat; background-size: cover;">
 
     <!-- Mask & flexbox options-->
     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -133,7 +133,9 @@
               <div class="card-body">
 
                 <!-- Form -->
-                <form name="contact" action="https://script.google.com/macros/s/AKfycbxNX15OH37oDpNp5FMpGGq4BGK5t2uW0p7SFvBW/exec" method="post" data-email="karanunewton4@gmail.com" id="gform" class="gform">
+                <form name="contact"
+                  action="https://script.google.com/macros/s/AKfycbxNX15OH37oDpNp5FMpGGq4BGK5t2uW0p7SFvBW/exec"
+                  method="post" data-email="karanunewton4@gmail.com" id="gform" class="gform">
                   <!-- Heading -->
                   <h3 class="dark-grey-text text-center">
                     <strong>Request a Quote:</strong>
@@ -165,13 +167,14 @@
                   <div class="text-center">
                     <button class="btn btn-indigo">Send</button>
                     <hr>
-<!--                    <fieldset class="form-check">-->
-<!--                      <input type="checkbox" class="form-check-input" id="checkbox1">-->
-<!--                      <label for="checkbox1" class="form-check-label dark-grey-text">Subscribe me to the newsletter</label>-->
-<!--                    </fieldset>-->
+                    <!--                    <fieldset class="form-check">-->
+                    <!--                      <input type="checkbox" class="form-check-input" id="checkbox1">-->
+                    <!--                      <label for="checkbox1" class="form-check-label dark-grey-text">Subscribe me to the newsletter</label>-->
+                    <!--                    </fieldset>-->
                     <div style="display:none" class="thankyou_message alert alert-success">
                       <button type="button" class="close" data-dismiss="thankyou_message">×</button>
-                      <strong>Thank you</strong> for contacting Top Figures Agency. Someone will get in touch with you shortly!
+                      <strong>Thank you</strong> for contacting Top Figures Agency. Someone will get in touch with you
+                      shortly!
                     </div>
                   </div>
 
@@ -221,19 +224,20 @@
 
             <!-- Main heading -->
             <h3 class="h3 mb-3">Top Figures Agency</h3>
-            <p>We service you through creating your online presence, from building your website, to performing SEO, to creating your portfolio</p>
+            <p>We service you through creating your online presence, from building your website, to performing SEO, to
+              creating your portfolio</p>
             <p>Read details below to learn more about us</p>
             <!-- Main heading -->
 
             <hr>
 
             <p>
-             Modern Design <br>
-             Constant support Through your journey
+              Modern Design <br>
+              Constant support Through your journey
             </p>
 
             <!-- CTA -->
-            <a  href="#" class="btn btn-indigo btn-md nav-link" data-id="about">Find out more
+            <a href="#" class="btn btn-indigo btn-md nav-link" data-id="about">Find out more
               <i class="fas fa-download ml-1"></i>
             </a>
             <a href="#" class="btn btn-indigo btn-md nav-link" data-id="contact">Reach out
@@ -267,7 +271,40 @@
               <button class="btn filter-button" data-filter="digital-marketing">Digital Marketing</button>
               <button class="btn filter-button" data-filter="seo">SEO</button>
             </div>
-            <br/>
+            <br />
+
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter digital-marketing seo web-app-dev">
+              <!-- Card -->
+              <div class="card">
+
+                <!-- Card image -->
+                <div class="view overlay">
+                  <img class="card-img-top" src="./images/zohari_suppliers.png" alt="Card image cap">
+                  <a href="https://newtonkiragu.github.io" target="_blank">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+
+                <!-- Card content -->
+                <div class="card-body">
+
+                  <!-- Title -->
+                  <h4 class="card-title">Zphari Suppliers</h4>
+                  <!-- Text -->
+                  <p class="card-text">Dynamic e-commerce system
+                    <br>
+                    Technologies used: Django| Python| SQLITE3 | HTML5 | CSS3 | Bootstrap | Google analytics
+                  </p>
+                  <!-- Button -->
+                  <!--                  <a href="#" class="btn btn-primary">Button</a>-->
+
+                </div>
+
+              </div>
+              <!-- Card -->
+            </div>
+
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter ui-ux web-app-dev">
               <!-- Card -->
@@ -288,11 +325,11 @@
                   <h4 class="card-title">Moringa Tech Blog</h4>
                   <!-- Text -->
                   <p class="card-text">CMS | Content Creation
-                  <br>
-                  Technologies used: Hugo | Disqus
+                    <br>
+                    Technologies used: Hugo | Disqus
                   </p>
                   <!-- Button -->
-<!--                  <a href="#" class="btn btn-primary">View Live </a>-->
+                  <!--                  <a href="#" class="btn btn-primary">View Live </a>-->
 
                 </div>
 
@@ -319,11 +356,11 @@
                   <h4 class="card-title">Puns</h4>
                   <!-- Text -->
                   <p class="card-text">Dynamic Website
-                  <br>
-                  Technologies used: Ruby | Sinatra | Materialize
+                    <br>
+                    Technologies used: Ruby | Sinatra | Materialize
                   </p>
                   <!-- Button -->
-<!--                  <a href="#" class="btn btn-primary">Button</a>-->
+                  <!--                  <a href="#" class="btn btn-primary">Button</a>-->
 
                 </div>
 
@@ -350,11 +387,11 @@
                   <h4 class="card-title">Wakili 101</h4>
                   <!-- Text -->
                   <p class="card-text">Dynamic Single page website | SEO
-                  <br>
-                  Technologies used: React | Yii | Google Analytics
+                    <br>
+                    Technologies used: React | Yii | Google Analytics
                   </p>
                   <!-- Button -->
-<!--                  <a href="#" class="btn btn-primary">Button</a>-->
+                  <!--                  <a href="#" class="btn btn-primary">Button</a>-->
 
                 </div>
 
@@ -381,11 +418,11 @@
                   <h4 class="card-title">Tsavo</h4>
                   <!-- Text -->
                   <p class="card-text">WordPress | CMS | SEO | UI/UX
-                  <br>
-                  Technologies used: Wordpress
+                    <br>
+                    Technologies used: Wordpress
                   </p>
                   <!-- Button -->
-<!--                  <a href="#" class="btn btn-primary">Button</a>-->
+                  <!--                  <a href="#" class="btn btn-primary">Button</a>-->
 
                 </div>
 
@@ -412,11 +449,11 @@
                   <h4 class="card-title">Movie Watch List</h4>
                   <!-- Text -->
                   <p class="card-text">Dynamic Website | UI/UX
-                  <br>
-                  Technologies used: Python | Django | the movie db api
+                    <br>
+                    Technologies used: Python | Django | the movie db api
                   </p>
                   <!-- Button -->
-<!--                  <a href="#" class="btn btn-primary">Button</a>-->
+                  <!--                  <a href="#" class="btn btn-primary">Button</a>-->
 
                 </div>
 
@@ -443,11 +480,11 @@
                   <h4 class="card-title">Newton Karanu</h4>
                   <!-- Text -->
                   <p class="card-text">Static single page portfolio | SEO | UI/UX
-                  <br>
-                  Technologies used: HTML5 | CSS3 | Bootstrap | Google analytics
+                    <br>
+                    Technologies used: HTML5 | CSS3 | Bootstrap | Google analytics
                   </p>
                   <!-- Button -->
-<!--                  <a href="#" class="btn btn-primary">Button</a>-->
+                  <!--                  <a href="#" class="btn btn-primary">Button</a>-->
 
                 </div>
 
@@ -481,7 +518,8 @@
               </div>
               <div class="col-10">
                 <h5 class="feature-title">User Experience and Graphic Design</h5>
-                <p class="grey-text">At top figures, your users' experience are our top priority. As such, we design modern interfaces for your software with amazing user experience.</p>
+                <p class="grey-text">At top figures, your users' experience are our top priority. As such, we design
+                  modern interfaces for your software with amazing user experience.</p>
               </div>
             </div>
             <!--/First row-->
@@ -510,7 +548,8 @@
               </div>
               <div class="col-10">
                 <h5 class="feature-title">Digital and inovative marketing</h5>
-                <p class="grey-text">For every business to boom, it needs an online presence in this digital age. We ensure that your online presence is felt with the right marketing.</p>
+                <p class="grey-text">For every business to boom, it needs an online presence in this digital age. We
+                  ensure that your online presence is felt with the right marketing.</p>
               </div>
             </div>
             <!--/Third row-->
@@ -528,41 +567,43 @@
               </div>
               <div class="col-10">
                 <h5 class="feature-title">SEO</h5>
-                <p class="grey-text">To ensure your online presence is fully felt, you need to be easily found. From users who search you to people who reffer you, stay a step ahead of your competitors by being the first among the suggestions provided by google, twitter and facebook</p>
+                <p class="grey-text">To ensure your online presence is fully felt, you need to be easily found. From
+                  users who search you to people who reffer you, stay a step ahead of your competitors by being the
+                  first among the suggestions provided by google, twitter and facebook</p>
               </div>
             </div>
             <!--/First row-->
 
             <div style="height:30px"></div>
 
-<!--            &lt;!&ndash;Second row&ndash;&gt;-->
-<!--            <div class="row">-->
-<!--              <div class="col-1 mr-3">-->
-<!--                <i class="fas fa-book fa-2x blue-text"></i>-->
-<!--              </div>-->
-<!--              <div class="col-10">-->
-<!--                <h5 class="feature-title">Web and App development</h5>-->
-<!--                <p class="grey-text">We give you detailed user-friendly documentation at your disposal. It will help you to implement your ideas-->
-<!--                  easily.-->
-<!--                </p>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash;/Second row&ndash;&gt;-->
+            <!--            &lt;!&ndash;Second row&ndash;&gt;-->
+            <!--            <div class="row">-->
+            <!--              <div class="col-1 mr-3">-->
+            <!--                <i class="fas fa-book fa-2x blue-text"></i>-->
+            <!--              </div>-->
+            <!--              <div class="col-10">-->
+            <!--                <h5 class="feature-title">Web and App development</h5>-->
+            <!--                <p class="grey-text">We give you detailed user-friendly documentation at your disposal. It will help you to implement your ideas-->
+            <!--                  easily.-->
+            <!--                </p>-->
+            <!--              </div>-->
+            <!--            </div>-->
+            <!--            &lt;!&ndash;/Second row&ndash;&gt;-->
 
-<!--            <div style="height:30px"></div>-->
+            <!--            <div style="height:30px"></div>-->
 
-<!--            &lt;!&ndash;Third row&ndash;&gt;-->
-<!--            <div class="row">-->
-<!--              <div class="col-1 mr-3">-->
-<!--                <i class="fas fa-graduation-cap fa-2x cyan-text"></i>-->
-<!--              </div>-->
-<!--              <div class="col-10">-->
-<!--                <h5 class="feature-title">Digital and inovative marketing</h5>-->
-<!--                <p class="grey-text">We care about the development of our users. We have prepared numerous tutorials, which allow you to learn-->
-<!--                  how to use MDB as well as other technologies.</p>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash;/Third row&ndash;&gt;-->
+            <!--            &lt;!&ndash;Third row&ndash;&gt;-->
+            <!--            <div class="row">-->
+            <!--              <div class="col-1 mr-3">-->
+            <!--                <i class="fas fa-graduation-cap fa-2x cyan-text"></i>-->
+            <!--              </div>-->
+            <!--              <div class="col-10">-->
+            <!--                <h5 class="feature-title">Digital and inovative marketing</h5>-->
+            <!--                <p class="grey-text">We care about the development of our users. We have prepared numerous tutorials, which allow you to learn-->
+            <!--                  how to use MDB as well as other technologies.</p>-->
+            <!--              </div>-->
+            <!--            </div>-->
+            <!--            &lt;!&ndash;/Third row&ndash;&gt;-->
 
           </div>
           <!--/Grid column-->
@@ -578,8 +619,10 @@
         <h2 class="my-5 h3 text-center">Contact Us</h2>
         <div class="container" align="center">
           <p>Feel free to reach out to us via <br>
-          <i class="fab fa-whatsapp fa-2x"></i>
-            <a href="https://api.whatsapp.com/send?phone=254714895623&text=I%20would%20like%20to%20inquire%20about%20&source=%22topfiguresagency.github.io%22&data=">Whatsapp</a> <br>
+            <i class="fab fa-whatsapp fa-2x"></i>
+            <a
+              href="https://api.whatsapp.com/send?phone=254714895623&text=I%20would%20like%20to%20inquire%20about%20&source=%22topfiguresagency.github.io%22&data=">Whatsapp</a>
+            <br>
             <i class="fas fa-phone fa-2x"></i>
             <a href="tel:+254714895623">Phone call</a> <br>
             <i class="fas fa-envelope fa-2x"></i>
@@ -599,13 +642,18 @@
     <hr class="my-4">
     <!-- Begin Mailchimp Signup Form -->
     <div id="mc_embed_signup">
-      <form action="https://gmail.us4.list-manage.com/subscribe/post?u=4395bd6f2ff7403017a964a2f&amp;id=52019d4c05" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <form action="https://gmail.us4.list-manage.com/subscribe/post?u=4395bd6f2ff7403017a964a2f&amp;id=52019d4c05"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+        novalidate>
         <div id="mc_embed_signup_scroll md-form">
           <label for="mce-EMAIL">Join our mailing list</label>
-          <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+          <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL"
+            placeholder="email address" required>
           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4395bd6f2ff7403017a964a2f_52019d4c05" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-indigo btn-sm"></div>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+              name="b_4395bd6f2ff7403017a964a2f_52019d4c05" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+              class="btn btn-indigo btn-sm"></div>
         </div>
       </form>
     </div>
@@ -617,7 +665,7 @@
         <i class="fab fa-facebook-f mr-3"></i>
       </a>
 
-      <a href="#" target="_blank">
+      <a href="https://twitter.com/KiraguNewton" target="_blank">
         <i class="fab fa-twitter mr-3"></i>
       </a>
 
@@ -637,7 +685,7 @@
         <i class="fab fa-pinterest mr-3"></i>
       </a>
 
-      <a href="#" target="_blank">
+      <a href="https://github.com/newtonkiragu/" target="_blank">
         <i class="fab fa-github mr-3"></i>
       </a>
 
@@ -649,7 +697,8 @@
 
     <!--Copyright-->
     <div class="footer-copyright py-3">
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> Top Figures Agency
+      Copyright &copy;
+      <script>document.write(new Date().getFullYear());</script> Top Figures Agency
     </div>
     <!--/.Copyright-->
 
